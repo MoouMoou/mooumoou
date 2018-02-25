@@ -8,6 +8,12 @@ body {
   background-color: #e2e2e2;
 }
 
+a {
+  &:visited {
+    color: $secondary-color;
+  }
+}
+
 #Top {
   .logo {
     color: $body-font-color;

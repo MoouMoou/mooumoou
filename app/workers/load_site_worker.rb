@@ -9,7 +9,7 @@ class LoadSiteWorker
       total_page = page_count / page_size + 1
 
       total_page.times do |page_no|
-        LoadSiteWorker.perform_async(page_no)
+        LoadSiteWorker.perform_async(page_no + 1)
       end
     else
       SiteLoader.parse_projects(page_no)
