@@ -1,0 +1,3 @@
+load_lagou:
+  cron: "*/10 * * * *"
+  class: 'LoadSiteWorker'

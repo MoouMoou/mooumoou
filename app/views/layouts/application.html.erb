@@ -9,6 +9,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container grid-sm">
+
+      <div id="Top">
+        <%= link_to "小試牛刀", root_path, class: 'logo' %>
+      </div>
+
+      <div class="columns" id="Wrapper">
+        <%= yield %>
+      </div>
+
+      <div id="Footer" class="text-center">
+        &copy; 2018
+      </div>
+    </div>
   </body>
 </html>

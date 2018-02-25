@@ -1,0 +1,39 @@
+.status {
+  color: white;
+  font-size: 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  line-height: 18px;
+  &.recruiting {
+    background-color: $success-color;
+  }
+  &.working {
+    background-color: $warning-color;
+  }
+  &.finished {
+    background-color: $gray-color;
+  }
+}
+
+.project-list {
+  list-style: none;
+  time {
+    font-size: 0.6rem;
+    color: $gray-color;
+  }
+}
+
+.project-detail {
+  padding: 1rem;
+  .title {
+  }
+  pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  time {
+    font-size: 0.6rem;
+    color: $gray-color;
+  }
+}

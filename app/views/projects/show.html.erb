@@ -1,0 +1,6 @@
+<div class="col-12 project-detail">
+  <h3 class="title"><%= @project.title %></h3>
+  <%= time_tag @project.posted_at %>
+  <pre><%= @project.body %></pre>
+  <%= link_to "来源", @project.origin_url, target: '_blank', class: 'text-gray' %>
+</div>

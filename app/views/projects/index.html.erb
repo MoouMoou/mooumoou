@@ -1,0 +1,15 @@
+<div class="col-12">
+  <ul class="project-list">
+    <% @projects.each do |project| %>
+      <li>
+        <span class="status <%= project.status %>"><%= t "project_status.#{project.status}" %></span>
+        <%= link_to project.title, project_path(project) %>
+        <%= time_tag project.posted_at %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="col-12">
+  <%= paginate @projects, window: 2 %>
+</div>
